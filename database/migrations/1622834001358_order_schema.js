@@ -14,7 +14,7 @@ class OrderSchema extends Schema {
       table.timestamps()
 
 
-      table.foreign('user_id')references('id').inTable('users').onDelete('cascade')
+      table.foreign('user_id').references('id').inTable('users').onDelete('cascade')
     })
   }
 
