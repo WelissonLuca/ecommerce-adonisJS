@@ -13,7 +13,7 @@ class CategorySchema extends Schema {
       table.timestamps();
 
       table
-        .foreign('imade_id')
+        .foreign('image_id')
         .references('id')
         .inTable('images')
         .onDelete('cascade');
